@@ -66,15 +66,10 @@ def evaluate(model, eval_loader, loss_func, opts):
             accs.append(acc)
             t.set_postfix(avg_acc='{:05.3f}'.format(np.mean(accs)), avg_loss='{:05.3f}'.format(np.mean(losses)))
             t.update()
-        # align = alignments.detach().cpu().numpy()[:, :, 0]
 
     # Uncomment if you want to visualise weights
     # fig, ax = plt.subplots(1, 1)
     # ax.pcolormesh(align)
     # fig.savefig("data/att.png")
     print("  End of evaluation : loss {:05.3f} , acc {:03.1f}".format(np.mean(losses), np.mean(accs)))
-    # return {'loss': np.mean(losses), 'cer': np.mean(accs)*100}
 
-
-if __name__ == '__main__':
-    train(1, 10)
