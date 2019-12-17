@@ -1,0 +1,32 @@
+2019-12-16 02:53:43,646 INFO      MySeq2Seq(
+  (encoder): Encoder(
+    (embedding): Embedding(11, 7)
+    (rnn): LSTM(7, 16, batch_first=True, bidirectional=True)
+  )
+  (decoder): Decoder(
+    (rnn): LSTM(39, 32, batch_first=True)
+    (attention): BahdanauAttention(
+      (key_layer): Linear(in_features=32, out_features=32, bias=False)
+      (query_layer): Linear(in_features=32, out_features=32, bias=False)
+      (energy_layer): Linear(in_features=32, out_features=1, bias=False)
+    )
+    (embedding_encoder): Embedding(11, 7)
+    (embedding_decoder): Linear(in_features=32, out_features=11, bias=True)
+  )
+)
+{'a': 3, 'b': 4, 'c': 5, 'd': 6, 'e': 7, 'f': 8, 'g': 9, 'h': 10, '<s>': 0, '</s>': 1, '<pad>': 2}
+["] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+[s] character was not represented in character set
+[x] character was not represented in character set
+[x] character was not represented in character set
+["] character was not represented in character set
+[ ] character was not represented in character set
+<s>baggaafedcba</s></s>

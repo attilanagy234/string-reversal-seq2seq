@@ -1,0 +1,7 @@
+matplotlib
+editdistance==0.4
+torch
+numpy
+tqdm
+librosa
+tensorboard==1.14
