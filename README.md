@@ -1,2 +1,2 @@
 # seq2seq
-Reversing a string - project laboratory
+Learning to reverse a string using a bidirectional LSTM and attention.
